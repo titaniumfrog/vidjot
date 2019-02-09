@@ -1,0 +1,113 @@
+<div>
+    <div id="deleteHeader">
+    <h3>NOTE - Users can only Delete their entries and will only see their entry listed</h3>
+    </div>
+</div>
+
+{{#each ideas}}
+
+    <div class="card card-body mb-2">
+        <div><h3>{{title}}</h3></div>
+        <div class="row">
+            <div class="col-6">
+                <p>Date of Game:</p>
+            </div>
+            <div class="col-6">
+                <h5>{{gamedate}}</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Team Name:</p>
+            </div>
+            <div class="col-6">
+                <h5>{{team}}</h5>
+            </div>
+        </div>
+        <h5>Offense</h5>
+        <div class="row">
+            <div class="col-6">
+                <p>Total Receptions:</p>
+            </div>
+            <div class="col-6">
+                <h5>{{receptions}}</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Total Drop Passes:</p>
+            </div>
+            <div class="col-6">
+                <h5>{{drops}}</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Touch Downs</p>
+            </div>
+            <div class="col-6">
+                <h5>{{tds}}</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Extra Pts Scored</p>
+            </div>
+            <div class="col-6">
+                <h5>{{extrapt}}</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Total Yards</p>
+            </div>
+            <div class="col-6">
+                <h5>{{yards}}</h5>
+            </div>
+        </div>
+        <h5>Deffense</h5>
+        <div class="row">
+            <div class="col-6">
+                <p>Total Tackles:</p>
+            </div>
+            <div class="col-6">
+                <h5>{{tackles}}</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Interceptions:</p>
+            </div>
+            <div class="col-6">
+                <h5>{{ints}}</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Sack:</p>
+            </div>
+            <div class="col-6">
+                <h5>{{sacks}}</h5>
+            </div>
+        </div>
+        <p>Other:</p>
+        <h5>{{details}}</h5>
+
+
+
+        <div class="row" id="deletePageBtns">
+            <div class="col-6">
+                <a class="btn btn-dark custom" id="btn-view" href="/ideas">BACK</a>
+            </div>
+            <div class="col-6">
+                <form method="post" action="/ideas/{{id}}?_method=DELETE">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <input type="submit" class="btn btn-danger custom"  id="btn-view" value="Delete">
+                </form>
+            </div>
+        </div>
+    </div>
+
+{{else}}
+        <p>No Roll Call Items Entered</p>
+{{/each}}

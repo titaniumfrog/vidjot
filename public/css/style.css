@@ -1,0 +1,60 @@
+.jumbotron{
+  background: #cccccc;
+}
+
+
+.logo{
+  width:150px;
+  margin:auto;
+}
+
+.logo1{
+  width:50%;
+  margin:auto;
+}
+
+.bg-custom {
+  background-color: #022e71;
+}
+
+.navbar-nav li{
+  padding-left:15px;
+}
+
+.navbar-brand {
+  color: #ffb010;
+}
+
+#officerSafety {
+  padding-left: 5px;
+  padding-top: 30px;
+  margin-left: 50px;
+}
+
+#officerID {
+  width: 80px;
+}
+
+/*Edit Button Width on VIEW*/
+#btn-view {
+  width: 100% !important;
+}
+
+#btn-view-submit {
+  margin-top: 20px;
+  width: 100% !important;
+}
+
+#deleteHeader{
+  background: #ffb010;
+  text-align: center;
+}
+
+#deletePageBtns {
+  width: 100%;
+}
+
+
+#disclainer{
+  text-align: center;
+}

@@ -1,0 +1,76 @@
+<div class="card card-body">
+  <h3>BPF Add New Stats</h3>
+  <form action="/ideas" method="post">
+
+      <div>
+          <div class="form-group">
+              <label for="title">Player Name</label>
+              <input type="text" class="form-control" name="title" required>
+          </div>
+      </div>
+
+    <div class="form-group">
+      <label for="gamedate">Game Date</label>
+      <input type="date" class="form-control" name="gamedate" required>
+    </div>
+
+      <div class="form-group">
+          <label for="team">Team QB</label>
+          <input type="text" class="form-control" name="team" required>
+      </div><hr>
+    <h4>OFFENSIVE STATS</h4>
+      <div class="form-group">
+          <label for="receptions">Receptions</label>
+          <input type="number" class="form-control" name="receptions" id="receptions" required>
+      </div>
+      <div class="form-group">
+          <label for="drops">Dropped Passes</label>
+          <input type="number" class="form-control" name="drops" id="drops" required>
+      </div>
+      <div class="form-group">
+          <label for="tds">Touch Downs</label>
+          <input type="number" class="form-control" name="tds" id="tds" required>
+      </div>
+      <div class="form-group">
+          <label for="extrapt">Extra Points</label>
+          <input type="number" class="form-control" name="extrapt" id="extrapt" required>
+      </div>
+      <div class="form-group">
+          <label for="yards">Total Yards - Including yards after catch</label>
+          <input type="number" class="form-control" name="yards" id="yards" required>
+      </div><hr>
+      <h4>DEFFENSIVE STATS</h4>
+      <div class="form-group">
+          <label for="tackles">Tackles</label>
+          <input type="number" class="form-control" name="tackles" id="tackles" required>
+      </div>
+      <div class="form-group">
+          <label for="ints">Interceptions</label>
+          <input type="number" class="form-control" name="ints" id="ints" required>
+      </div>
+      <div class="form-group">
+          <label for="sacks">Sacks</label>
+          <input type="number" class="form-control" name="sacks" id="sacks" required>
+      </div>
+      <h4>Other</h4>
+    <div class="form-group">
+      <label for="details">Not Listed</label>
+      <textarea class="form-control" name="details" required></textarea>
+    </div><hr>
+      <div class="form-group">
+          <label for="win">Games Won</label>
+          <input type="number" class="form-control" name="win" id="win" required>
+      </div>
+      <div class="form-group">
+          <label for="lose">Games Lost</label>
+          <input type="number" class="form-control" name="lose" id="lose" required>
+      </div>
+
+
+    <button type="submit" class="btn btn-primary" id="btn-view-submit">Submit</button>
+
+  </form>
+</div>
+
+
+
